@@ -1,1 +1,178 @@
-// put your styles here
+body {
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.menu-toggle {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    display: none;
+    z-index: 999;
+
+    i {
+        font-size: 3.5rem;
+    }
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    z-index: 1000;
+
+    .fa-times {
+        font-size: 3.5rem;
+        display: none;
+        cursor: pointer;
+    }
+
+    .logo {
+        width: 5rem;
+        box-sizing: content-box;
+        padding-left: 3rem;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    ul {
+        height: 8rem;
+        list-style: none;
+        display: flex;
+
+        li {
+            cursor: pointer;
+            padding: 0 3rem;
+            line-height: 8rem;
+            transition: background 0.5s;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.075);
+            }
+        }
+    }
+}
+
+.nav-right ul li {
+    border-right: 1px solid rgba(0, 0, 0, 0.075);
+
+    &:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.075);
+    }
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.nav-right i {
+    margin-right: 1rem;
+}
+
+.nav-right ul li:first-child {
+    i {
+        margin-right: 0;
+    }
+}
+
+.main {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tone-1 {
+    background-color: #f7f7f6;
+    height: 100vh;
+    flex: 1;
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 5rem;
+            font-family: fantasy;
+            letter-spacing: 3px;
+            margin-right: -25px;
+            font-weight: 100;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.tone-2 {
+    background-color: #f9e2ba;
+    height: 100vh;
+    flex: 1;
+    position: relative;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: -15rem;
+        transform: translateY(-50%);
+        transform: rotate(-18deg);
+    }
+}
+
+.info-btns {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    padding: 2rem;
+    color: #f7f7f6;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: all .5s;
+
+    &:hover {
+        box-shadow: 3px 1rem 2rem rgba(0, 0, 0, 0.3);
+        transform: translateY(-1rem);
+    }
+}
+
+.discover-btn {
+    background-color: #a4a4a4;
+}
+
+.cart-btn {
+    background-color: #141110;
+}

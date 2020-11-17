@@ -3,18 +3,84 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" defer></script>
 
         <!-- custom css and js -->
         <link rel="stylesheet" href="css/base.scss" />
         <link rel="stylesheet" href="css/style.scss" />
         <script src="js/script.js" defer></script>
 
-        <title>Project Name</title>
+        <title>Adidas - Best shoes on the market.</title>
     </head>
     <body>
-        <div class="main">
-            <h1>hello, world</h1>
-        </div>
+        <header>
+            <div class="overlay"></div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <i class="fas fa-times"></i>
+                <div class="logo">
+                    <img src="/assets/images/adidas-logo.svg" alt="adidas logo" />
+                </div>
+
+                <div class="nav-middle">
+                    <ul>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i> Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-cart"></i> Cart
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="main">
+                <div class="tone-1">
+                    <div class="product-info">
+                        <h1>YEEZY BOOST 350 V2</h1>
+                        <p>New and Improved</p>
+                        <h2>$230</h2>
+                        <div class="info-btns">
+                            <a href="#" class="btn discover-btn">DISCOVER</a>
+                            <a href="#" class="btn cart-btn">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tone-2">
+                    <img src="/assets/images/shoe.png" alt="Shoe Big Image">
+                </div>
+            </main>
+        </header>
     </body>
 </html>
