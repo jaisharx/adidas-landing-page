@@ -55,18 +55,23 @@ nav {
         height: 8rem;
         list-style: none;
         display: flex;
-
+        
         li {
             cursor: pointer;
             padding: 0 3rem;
             line-height: 8rem;
+            font-weight: 500;
             transition: background 0.5s;
-
+            
             &:hover {
                 background-color: rgba(0, 0, 0, 0.075);
             }
         }
     }
+}
+
+.nav-middle ul li:last-child {
+    margin-right: 38rem;
 }
 
 .nav-right ul li {
@@ -125,7 +130,7 @@ nav {
 
         p {
             font-size: 1.8rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
 
         h2 {
@@ -174,7 +179,7 @@ nav {
 }
 
 .cart-btn {
-    background-color: #141110;
+    background-color: #141210;
 }
 
 @media screen and (max-width: 1200px) {
@@ -315,6 +320,10 @@ nav {
     .overlay.menu-open {
         width: 100%;
         opacity: 1;
+    }
+
+    .nav-middle ul li:last-child {
+        margin-right: 0rem;
     }
 }
 
