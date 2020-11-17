@@ -71,7 +71,19 @@ nav {
 }
 
 .nav-middle ul li:last-child {
-    margin-right: 38rem;
+    // margin-right: 38rem;
+}
+
+.deals {
+    position: relative;
+}
+
+.notif {
+    width: 1rem;
+    height: 1rem;
+    top: -1rem;
+    right: -4%;
+    position: absolute;
 }
 
 .nav-right ul li {
@@ -147,7 +159,7 @@ nav {
     position: relative;
 
     img {
-        width: 100%;
+        width: 110%;
         position: absolute;
         top: 25%;
         left: -15rem;
